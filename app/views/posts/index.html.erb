@@ -1,7 +1,7 @@
 <h1>AjaxApp</h1>
 <%# 投稿ボタン %>
 <%= form_with url:  "/posts", method: :post,id: "form" do |form| %>
-  <%= form.text_field :content %>
+  <%= form.text_field :content  , id: "content" %>
   <%= form.submit '投稿する' , id: "submit" %>
 <% end %>
 
